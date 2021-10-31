@@ -7,7 +7,7 @@
     --negro: rgb(29, 29, 29);
     --Oscuro: #313131;
     --Medio: #414141;
-    --Light: #525252;
+    --Light: #202020;
     --claro: #c2c2c2;
     --blanco: white;
 
@@ -18,3 +18,7 @@
     --rajdhani: 'Rajdhani', sans-serif;
 }
 
+body{
+    color: var(--blanco);
+    background-color: var(--Light);
+}

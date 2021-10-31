@@ -12,10 +12,10 @@
     </head>
     <body>
         
-        <div class="container-fluid bg-light">
+        <div class="container-fluid bg-dark">
             <div class="row">
                 <div class="col-md-10 offset-md-1">
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                         <div class="container-fluid">
                             <a class="navbar-brand" href="#">Mi Rutina</a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,12 +37,12 @@
             <div class="row d-flex justify-content-center pt-5">
                 <div class="col-md-10">
                     <p class="text-center display-1 cronometro">00:00:00</p>
-                    <div class="row pt-3  justify-content-evenly">
+                    <div class="row pt-5  justify-content-evenly">
                         <div class="col-md-6 d-grid  text-center">
-                            <button type="button" class="btn btn-success iniciar">Iniciar</button>
+                            <button type="button" class="btn btn-outline-success" onclick="estadoReloj()">Iniciar</button>
                         </div>
                         <div class="col-md-6 d-grid text-center mt-2 mt-md-0">
-                            <button type="button" class="btn btn-info">Reiniciar</button>
+                            <button type="button" class="btn btn-outline-warning" onclick="reiniciarReloj()">Reiniciar</button>
                         </div>
                     </div>
                     

@@ -35,7 +35,7 @@ async function obtenerRutina(){
         console.log(error);
     }
 }
-
+/*
 function crearRutina(rutinas){
     const rutinaDia = rutinas.filter( x => x.dia.toLowerCase() === diaSemana)
     const {dia, nombre, ejercicios} = rutinaDia[0];
@@ -87,7 +87,7 @@ function crearRutina(rutinas){
             rutinaDiv.innerHTML = html;
         });
     }
-}
+}*/
 
 let rutinaActual = 1;
 
@@ -124,35 +124,45 @@ function siguienteRutina(datos){
         }
     });
 }
+let suma=0;
+function estadoReloj(){
+    let iniciado = true;
+    
+    const iniciaBtn = document.querySelector('.btn-outline-success');
+    const detenerBtn = document.querySelector('.btn-outline-danger');
+    if(iniciaBtn){
+        iniciaBtn.classList.remove('btn-outline-success');
+        iniciaBtn.classList.add('btn-outline-danger');
+        iniciaBtn.textContent = 'Detener';
+        iniciado =true;
+        reloj();
+    }else if(detenerBtn){
+        detenerBtn.classList.add('btn-outline-success');
+        detenerBtn.classList.remove('btn-outline-danger');
+        detenerBtn.textContent = 'Iniciar';
+        iniciado = false;
+        parar();
+    }
+}
+let tiempo;
+function reloj(iniciado){
+    tiempo = setInterval(ImprimirReloj, 1000);
+}
 
-const iniciar = document.querySelector('.iniciar');
-iniciar.addEventListener('click',()=>{
-    iniciar.classList.remove('iniciar');
-    iniciar.classList.remove('btn-success');
-    iniciar.classList.add('parar');
-    iniciar.classList.add('btn-danger');
-    iniciar.textContent = "Detener";
-    reloj();
-});
+function parar(){
+    clearInterval(tiempo);
+}
 
+const pCronometro = document.querySelector('.cronometro');
 let s = 0;
 let m = 0;
 let h = 0;
 
-function reloj(){
-    let tiempo = setInterval(()=>{
-        ImprimirReloj();
-    }, 1000);
-
-    const parar = document.querySelector('.parar')
-    parar.addEventListener('click', (e)=>{
-        iniciar.classList.remove('parar');
-        iniciar.classList.add('iniciar');
-        clearInterval(tiempo);
-    }); 
+function reiniciarReloj(){
+    sr = '00',mr = '00',hr = '00';
+    s=0,m=0,h=0;
+    pCronometro.textContent = `${hr}:${mr}:${sr}`;
 }
-
-const pCronometro = document.querySelector('.cronometro');
 
 function ImprimirReloj(){
     s++;
