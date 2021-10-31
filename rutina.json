@@ -1,0 +1,180 @@
+[
+    {
+        "dia": "Lunes",
+        "nombre":"Pecho",
+        "ejercicios": [
+            {
+                "nombre": "Press",
+                "series": "4",
+                "repeticiones": "12",
+                "tiempoDescanso": "2",
+                "peso": "16 kilos"
+            },
+            {
+                "nombre": "Apertura",
+                "series": "4",
+                "repeticiones": "12",
+                "tiempoDescanso": "2",
+                "peso": "16 kilos"
+            },
+            {
+                "nombre": "Press Neutral",
+                "series": "4",
+                "repeticiones": "15",
+                "tiempoDescanso": "2",
+                "peso": "16 kilos"
+            },
+            {
+                "nombre": "Pullover",
+                "series": "4",
+                "repeticiones": "15",
+                "tiempoDescanso": "2",
+                "peso": "16 kilos"
+            }
+        ]
+    },
+    {
+        "dia": "Martes",
+        "nombre":"Espalda",
+        "ejercicios": [
+            {
+                "nombre": "Remo",
+                "series": "4",
+                "repeticiones": "12",
+                "tiempoDescanso": "2",
+                "peso": "16 kilos"
+            },
+            {
+                "nombre": "Remo Inclinado",
+                "series": "4",
+                "repeticiones": "12",
+                "tiempoDescanso": "2",
+                "peso": "16 kilos"
+            },
+            {
+                "nombre": "Peso Muerto",
+                "series": "4",
+                "repeticiones": "12",
+                "tiempoDescanso": "2",
+                "peso": "16 kilos"
+            },
+            {
+                "nombre": "Apertura de espanda",
+                "series": "4",
+                "repeticiones": "12",
+                "tiempoDescanso": "2",
+                "peso": "8 kilos"
+            }
+        ]
+    },
+    {
+        "dia": "Miercoles",
+        "nombre":"Hombros",
+        "ejercicios": [
+            {
+                "nombre": "Vuelo Frontal",
+                "series": "4",
+                "repeticiones": "12",
+                "tiempoDescanso": "2",
+                "peso": "8 kilos"
+            },
+            {
+                "nombre": "Vuelo Lateral",
+                "series": "4",
+                "repeticiones": "12",
+                "tiempoDescanso": "2",
+                "peso": "8 kilos"
+            },
+            {
+                "nombre": "Vuelo Posterior",
+                "series": "4",
+                "repeticiones": "12",
+                "tiempoDescanso": "2",
+                "peso": "8 kilos"
+            },
+            {
+                "nombre": "Prensa Superior",
+                "series": "4",
+                "repeticiones": "12",
+                "tiempoDescanso": "2",
+                "peso": "8 kilos"
+            }
+        ]
+    },
+    {
+        "dia": "Jueves",
+        "nombre":"Brazos",
+        "ejercicios": [
+            {
+                "nombre": "Curl Biceps",
+                "series": "4",
+                "repeticiones": "12",
+                "tiempoDescanso": "2",
+                "peso": "8 kilos"
+            },
+            {
+                "nombre": "Martillos",
+                "series": "4",
+                "repeticiones": "12",
+                "tiempoDescanso": "2",
+                "peso": "8 kilos"
+            },
+            {
+                "nombre": "Patada",
+                "series": "4",
+                "repeticiones": "12",
+                "tiempoDescanso": "2",
+                "peso": "8 kilos"
+            },
+            {
+                "nombre": "Extencion Triceps",
+                "series": "4",
+                "repeticiones": "12",
+                "tiempoDescanso": "2",
+                "peso": "8 kilos"
+            }
+        ]
+    },
+    {
+        "dia": "Viernes",
+        "nombre":"Piernas",
+        "ejercicios": [
+            {
+                "nombre": "Sentadilla",
+                "series": "4",
+                "repeticiones": "12",
+                "tiempoDescanso": "2",
+                "peso": "16 kilos"
+            },
+            {
+                "nombre": "Estocadas",
+                "series": "4",
+                "repeticiones": "20",
+                "tiempoDescanso": "2",
+                "peso": "16 kilos"
+            },
+            {
+                "nombre": "Elevacion gluteo",
+                "series": "4",
+                "repeticiones": "15",
+                "tiempoDescanso": "2",
+                "peso": "16 kilos"
+            },
+            {
+                "nombre": "Elevacion punta del pie",
+                "series": "4",
+                "repeticiones": "20",
+                "tiempoDescanso": "2",
+                "peso": "8 kilos"
+            }
+        ]
+    },
+    {
+        "dia": "sabado",
+        "nombre": "descanso"
+    },
+    {
+        "dia": "domingo",
+        "nombre": "descanso"
+    }
+]
