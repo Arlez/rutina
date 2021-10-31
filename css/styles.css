@@ -18,7 +18,11 @@
     --rajdhani: 'Rajdhani', sans-serif;
 }
 
-body{
+.bg-oscuro{
     color: var(--blanco);
     background-color: var(--Light);
+}
+.bg-claro{
+    color: black;
+    background-color: var(--blanco);
 }

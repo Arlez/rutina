@@ -13,6 +13,7 @@ function insertarDatos(dia, nombre){
     }
 }
 
+let dia;
 //metodo para consultar el dia de la semana
 const dias= ["domingo", "lunes", "martes", "miercoles", "jueves", "viernes", "sabado"];
 const diaSemana = dias[fecha.getDay()];//obtiene el dia
@@ -35,7 +36,34 @@ async function obtenerRutina(){
         console.log(error);
     }
 }
-/*
+
+function oscuroClaro(){
+    const oscuro = document.querySelector('.oscuro');
+    const claro = document.querySelector('.claro');
+    const body =  document.body;
+    const navbar = document.querySelector('.navbar');
+
+    
+
+    if(oscuro){
+        oscuro.innerHTML = '<i class="fas fa-moon"></i>';
+        oscuro.classList.add('claro');
+        oscuro.classList.remove('oscuro');
+        body.classList.add('bg-claro');
+        navbar.classList.add('bg-light', 'navbar-light');
+        navbar.classList.remove('bg-dark', 'navbar-dark');
+
+    }else if(claro){
+        claro.innerHTML = '<i class="fas fa-sun"></i>';
+        claro.classList.add('oscuro');
+        claro.classList.remove('claro');
+        body.classList.add('bg-oscuro');
+        body.classList.remove('bg-claro');
+        navbar.classList.add('bg-dark', 'navbar-dark');
+        navbar.classList.remove('bg-light', 'navbar-light');
+    }
+}
+
 function crearRutina(rutinas){
     const rutinaDia = rutinas.filter( x => x.dia.toLowerCase() === diaSemana)
     const {dia, nombre, ejercicios} = rutinaDia[0];
@@ -87,7 +115,7 @@ function crearRutina(rutinas){
             rutinaDiv.innerHTML = html;
         });
     }
-}*/
+}
 
 let rutinaActual = 1;
 
@@ -134,18 +162,16 @@ function estadoReloj(){
         iniciaBtn.classList.remove('btn-outline-success');
         iniciaBtn.classList.add('btn-outline-danger');
         iniciaBtn.textContent = 'Detener';
-        iniciado =true;
         reloj();
     }else if(detenerBtn){
         detenerBtn.classList.add('btn-outline-success');
         detenerBtn.classList.remove('btn-outline-danger');
         detenerBtn.textContent = 'Iniciar';
-        iniciado = false;
         parar();
     }
 }
 let tiempo;
-function reloj(iniciado){
+function reloj(){
     tiempo = setInterval(ImprimirReloj, 1000);
 }
 
@@ -156,25 +182,22 @@ function parar(){
 const pCronometro = document.querySelector('.cronometro');
 let s = 0;
 let m = 0;
-let h = 0;
 
 function reiniciarReloj(){
-    sr = '00',mr = '00',hr = '00';
-    s=0,m=0,h=0;
-    pCronometro.textContent = `${hr}:${mr}:${sr}`;
+    sr = '00',mr = '00';
+    s=0,m=0;
+    pCronometro.textContent = `${mr}:${sr}`;
 }
 
 function ImprimirReloj(){
     s++;
     if(s<10){sr = `0${s}`;}else{sr=s}
     if(m<10){mr = `0${m}`;}else{mr=m}
-    if(h<10){hr= `0${h}`;}else{hr=h}
 
     if(s===59){m++;s=0;}
     if(m===59){h++;m=0;}
-    if(h===23 && m===59 && s===59){h=0;}
 
-    pCronometro.textContent = `${hr}:${mr}:${sr}`;
+    pCronometro.textContent = `${mr}:${sr}`;
 }
 
 

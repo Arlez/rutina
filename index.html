@@ -10,38 +10,47 @@
         <link rel="stylesheet" href="css/styles.css">
         <title>Mi Rutina</title>
     </head>
-    <body>
-        
-        <div class="container-fluid bg-dark">
-            <div class="row">
-                <div class="col-md-10 offset-md-1">
-                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                        <div class="container-fluid">
-                            <a class="navbar-brand" href="#">Mi Rutina</a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                                <div class="navbar-nav">
-                                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                                    <a class="nav-link" href="#">Administrar</a>
-                                </div>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
+    <body class="bg-oscuro"> 
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Mi rutina</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#info">Info</a>
+                        </li>
+                    </ul><!--links-izquierda-->
+                    
+                    <div class="d-flex  justify-content-center">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"> <a onclick="oscuroClaro()" class="nav-link active oscuro" aria-current="page" href="#"><i class="fas fa-sun"></i></a></li>
+                        </ul>                
+                    </div><!--.contacto-->
+              </div>
             </div>
-        </div>
+        </nav><!--.barra-navegacion-->
 
-        <div class="container pt-5">
+        <div class="container-xl pt-5">
             <div class="row d-flex justify-content-center pt-5">
-                <div class="col-md-10">
-                    <p class="text-center display-1 cronometro">00:00:00</p>
+                <div class="col-md-10 col-xl-8">
+                    <div class="row align-items-end">
+                        <div class="col-md-6">
+                            <p class="text-center fs-4 m-0">Descanso:</p>
+                            <p class="text-center display-3 m-0"> <span class="tiempo-descanso"> 02:00</span></p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="text-center display-1 cronometro m-0">00:00</p>
+                        </div>
+                    </div>
+                    
                     <div class="row pt-5  justify-content-evenly">
                         <div class="col-md-6 d-grid  text-center">
                             <button type="button" class="btn btn-outline-success" onclick="estadoReloj()">Iniciar</button>
                         </div>
-                        <div class="col-md-6 d-grid text-center mt-2 mt-md-0">
+                        <div class="col-md-6 d-grid text-center mt-3 mt-md-0">
                             <button type="button" class="btn btn-outline-warning" onclick="reiniciarReloj()">Reiniciar</button>
                         </div>
                     </div>
@@ -49,6 +58,16 @@
                 </div>
             </div>
         </div>
+        
+    <div class="container-xl mt-5">
+        <div class="rutina">
+
+            <div class="nombre-dia">
+
+            </div>
+            <div class="nombre-ejercicio"></div>
+        </div>
+    </div>
         
 
 
